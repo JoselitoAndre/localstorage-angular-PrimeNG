@@ -1,0 +1,29 @@
+
+    <p-table [columns]="cols" [value]="tasks" selectionMode="single" [(selection)]="selectedTasks" (onRowSelect)="onRowSelect($event)" [paginator]="true" [rows]="15"  >
+      <ng-template pTemplate="caption">
+          Lista de Empresas
+      </ng-template>
+
+      <ng-template pTemplate="header">
+          <tr>
+              <th>CNPJ</th>
+              <th>NOME</th>
+              <th>ANO DE FUNDAÇÂO</th>
+              <th></th>
+              
+          </tr>
+      </ng-template>
+      
+      <ng-template pTemplate="body" let-task>
+          <tr>
+              <td>{{task.cnpj}}</td>
+              <td>{{task.nome}}</td>
+              <td>{{task.data}}</td>
+              <td><button type="button" pButton icon="fa fa-close" (click)="deleteTask(task)" label="Delete">
+              </button>
+              </td>
+          </tr>
+      </ng-template>
+
+  </p-table>
+  

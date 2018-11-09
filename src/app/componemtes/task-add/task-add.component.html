@@ -1,0 +1,47 @@
+
+<div >
+    <div >
+        Adcionar empresa
+    </div>
+    <div >
+            <form (submit)="addTask()" >
+                    <div class="ui-g ui-fluid">
+                        <div class="ui-g-12 ui-md-4">
+                            <div class="ui-inputgroup">
+                                <span class="ui-inputgroup-addon"><i class="fa fa-institution"></i></span>
+                                <input type="text"  name="cnpj" [(ngModel)]="cnpj"  pInputText placeholder="CNPJ" >         
+                            </div>
+                        </div>
+                      </div>
+              
+                      <div class="ui-g ui-fluid">
+                          <div class="ui-g-12 ui-md-4">
+                              <div class="ui-inputgroup">
+                                  <span class="ui-inputgroup-addon"><i class="fa fa-leanpub"></i></span>
+                                  <input type="text" name="nome" [(ngModel)]="nome" pInputText placeholder="Nome da Empresa" >         
+                              </div>
+                          </div>
+                        </div>
+              
+                        <div class="ui-g ui-fluid">
+                            <div class="ui-g-12 ui-md-4">
+                                <div class="ui-inputgroup">
+                                    <span class="ui-inputgroup-addon"><i class="fa fa-calendar"></i></span>
+                                    <input type="text" name="data" [(ngModel)]="data" pInputText placeholder="Data de Fundanção" >         
+                                </div>
+                            </div>
+                          </div>
+                          <button pButton icon="fa fa-plus" type="submit"  value="Primary" label="Adcionar Empresa" class="ui-button-rounded"></button>
+                          
+                          
+                          
+                </form> 
+    </div>
+</div>
+
+
+      
+       
+  
+
+  
